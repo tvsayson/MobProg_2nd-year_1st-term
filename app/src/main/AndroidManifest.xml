@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProj"
+        tools:targetApi="31">
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
+            android:name=".Plant_Pioneers"
+            android:exported="false" />
+        <activity
+            android:name=".Events"
+            android:exported="false" />
+        <activity
+            android:name=".Bamboo_Bazaar"
+            android:exported="false" />
+        <activity
+            android:name=".Bamboo_Map"
+            android:exported="false" />
+        <activity
+            android:name=".About_Us"
+            android:exported="false" />
+        <activity
+            android:name=".Changeprof"
+            android:exported="false" />
+        <activity
+            android:name=".Contact"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".BWP_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Changepass"
+            android:exported="false" />
+        <activity
+            android:name=".Code"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot"
+            android:exported="false" />
+        <activity
+            android:name=".Editnum"
+            android:exported="false" />
+        <activity
+            android:name=".Editpass"
+            android:exported="false" />
+        <activity
+            android:name=".Editmail"
+            android:exported="false" />
+        <activity
+            android:name=".Edituprof"
+            android:exported="false" />
+        <activity
+            android:name=".Editp"
+            android:exported="false" />
+        <activity
+            android:name=".Personalprof"
+            android:exported="false" />
+        <activity
+            android:name=".Donate"
+            android:exported="false" />
+        <activity
+            android:name=".Donation"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Search"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Login" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".Create_Account" />
+        <activity
+            android:name=".Fragment5"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment4"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment3"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment2"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment1"
+            android:exported="false" />
+        <activity
+            android:name=".start"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".App_Intro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

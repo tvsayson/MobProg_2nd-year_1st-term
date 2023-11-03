@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lightbg"
+    android:id="@+id/Donates"
+    tools:context=".Donate">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="338dp"
+        android:layout_height="1004dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        app:srcCompat="@drawable/donationbg" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="41dp"
+        android:layout_height="36.5dp"
+        android:onClick="tyDon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        app:layout_constraintVertical_bias="0.153"
+        app:srcCompat="@drawable/downback" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="433dp"
+        android:layout_height="904dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/trans" />
+
+    <EditText
+        android:id="@+id/username4"
+        android:layout_width="254dp"
+        android:layout_height="37dp"
+        android:background="@drawable/textcorner"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:textAlignment="textStart"
+        android:textColor="#80877F"
+        android:textColorHint="@color/Green"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <EditText
+        android:id="@+id/username3"
+        android:layout_width="254dp"
+        android:layout_height="82dp"
+        android:background="@drawable/cashcorner"
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:inputType="text"
+        android:paddingStart="24dp"
+        android:paddingTop="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/Green"
+        android:textColorHint="@color/Green"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="254dp"
+        android:layout_height="37dp"
+        android:background="@drawable/textcorner"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:textAlignment="textStart"
+        android:textColor="#80877F"
+        android:textColorHint="@color/Green"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <ImageView
+        android:id="@+id/donateButton"
+        android:layout_width="249dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/donatebutton" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="267dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textcorner"
+            android:fontFamily="@font/poppins"
+            android:text="Credit / Debit Card"
+            android:textColorHint="@color/black"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.786" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textcorner"
+            android:fontFamily="@font/poppins"
+            android:text="Online Banking"
+            android:textColorHint="@color/black"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.678" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textcorner"
+            android:fontFamily="@font/poppins"
+            android:text="E - Wallet"
+            android:textColorHint="@color/black"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.732" />
+
+
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/donationOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dim_background"
+        android:visibility="gone">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/Thanks"
+        android:layout_width="402dp"
+        android:layout_height="865dp"
+        android:src="@drawable/pop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

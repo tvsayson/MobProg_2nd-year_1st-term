@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="text1">Email</string>
+    <string name="text2">Password</string>
+    <string name="button1">Login</string>
+    <string name="text3">Forgot Password?</string>
+    <string name="email_address_mobile_number">Email Address/ Mobile Number</string>
+
+    <string name="Register">
+        <b><u>Register Here</u></b>
+
+    </string>
+    <string name="text5">Don\'t have account yet?</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+
+    <string name="username">Username: </string>
+    <string name="first_name">First Name: </string>
+    <string name="last_name">\Last Name: </string>
+    <string name="email_address">Email Address</string>
+    <string name="text4">Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="phone_number">\Phone Number</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="termsandconditions">I agree to the Terms and Conditions</string>
+    <string name="button2">Sign In</string>
+    <string name="orsignupwith">Or sign up with</string>
+    <string name="skipfornow">
+        <b><u>SKIP FOR NOW</u></b></string>
+
+
+</resources>
