@@ -1,36 +1,57 @@
 package com.example.finalproj;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.widget.NestedScrollView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ScrollView;
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.ImageView;
 
 public class About_Us extends AppCompatActivity {
-
-    private ScrollView scrollView;
-    private Button backToTopButton;
+    private NestedScrollView scrollView;
+    private ImageView customBackToTopButton;
+    private boolean buttonVisible = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
-
         scrollView = findViewById(R.id.scrollView);
-        backToTopButton = findViewById(R.id.backToTopButton);
+        customBackToTopButton = findViewById(R.id.backtotop);
+        customBackToTopButton.setVisibility(View.GONE);
+        scrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
 
-        // Set a scroll listener to show/hide the "back to top" button
-        scrollView.getViewTreeObserver().addOnScrollChangedListener(() -> {
-            if (scrollView.getScrollY() > 0) {
-                backToTopButton.setVisibility(View.VISIBLE);
-            } else {
-                backToTopButton.setVisibility(View.GONE);
+                if (scrollY > oldScrollY) {
+
+                    customBackToTopButton.setVisibility(View.VISIBLE);
+                    buttonVisible= true;
+                } else if (scrollY < oldScrollY && buttonVisible) {
+                    customBackToTopButton.setVisibility(View.VISIBLE);
+                    buttonVisible = false;
+                } else {
+                    customBackToTopButton.setVisibility(View.GONE);
+                }
             }
         });
 
-        // Scroll to the top when the "back to top" button is clicked
-        backToTopButton.setOnClickListener(view -> {
-            scrollView.smoothScrollTo(0, 0);
+        // Set a click listener for the "Back to Top" button
+        customBackToTopButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Scroll back to the top when the custom button is clicked
+                scrollView.smoothScrollTo(0, 0);
+                customBackToTopButton.setVisibility(View.GONE);
+                buttonVisible = false;
+            }
         });
     }
+    public void Editback(View view) {
+        Intent intent = new Intent(this, Homepage.class);
+        startActivity(intent);
+    }
 }
+

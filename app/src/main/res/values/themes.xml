@@ -7,6 +7,7 @@
         <item name="android:scrollbarTrackHorizontal">@color/cream</item>
         <item name="android:scrollbarThumbVertical">@color/cream</item>
         <item name="android:scrollbarTrackVertical">@color/cream</item>
+        <item name="android:selectedWeekBackgroundColor">@color/red</item>
     </style>
 
     <style name="Theme.FinalProj" parent="Base.Theme.FinalProj" />

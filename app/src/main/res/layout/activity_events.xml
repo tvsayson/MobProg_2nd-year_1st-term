@@ -2,8 +2,210 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backbutton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lightbg"
     tools:context=".Events">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="355dp"> <!-- Lowered alpha value for background -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Content inside the ScrollView -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Background Image -->
+                <TextView
+                    android:id="@+id/events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Events"
+                    android:textAlignment="center"
+                    android:textColor="@color/Green"
+                    android:textSize="37sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:onClick="Editback"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.042"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.019"
+                    app:srcCompat="@drawable/back_button" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="427dp"
+                android:layout_height="13dp"
+                app:srcCompat="@drawable/line" />
+
+
+            <TextView
+                android:id="@+id/forgotpassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="20dp"
+                android:text="Calendar"
+                android:textColor="@color/Green"
+                android:textSize="20sp" />
+
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="306dp"
+                android:layout_height="311dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                android:background="@color/Green"
+                android:focusedMonthDateColor="#FFFFFF"
+                android:selectedWeekBackgroundColor="@color/red"
+                android:showWeekNumber="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/eventsscrollable"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:id="@+id/Events1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="59dp"
+                    android:paddingTop="25dp"
+                    android:text="Events"
+                    android:textColor="@color/Green"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.745" />
+
+                <TextView
+                    android:id="@+id/bamboodialogues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:fontFamily="@font/poppins"
+                    android:paddingLeft="63dp"
+                    android:paddingTop="70dp"
+                    android:text="The Bamboo Dialogues"
+                    android:textColor="@color/Green"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.745" />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="72dp"
+                    android:paddingTop="95dp"
+                    app:srcCompat="@drawable/bamboodialogues2" />
+
+                <TextView
+                    android:id="@+id/seemore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="270dp"
+                    android:paddingTop="150dp"
+                    android:layout_marginTop="60dp"
+                    android:text="See More"
+                    android:textColor="@color/Green"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.745" />
+
+                <TextView
+                    android:id="@+id/bamboovolunteerday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:fontFamily="@font/poppins"
+                    android:paddingLeft="63dp"
+                    android:paddingTop="260dp"
+                    android:text="Bamboo Volunteer Day"
+                    android:textColor="@color/Green"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.745" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="72dp"
+                    android:paddingTop="285dp"
+                    app:srcCompat="@drawable/bamboovolunteerday" />
+
+                <TextView
+                    android:id="@+id/seemore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingLeft="270dp"
+                    android:paddingTop="150dp"
+                    android:text="See More"
+                    android:textColor="@color/Green"
+                    android:textSize="16sp"
+                    app:layout_constraintVertical_bias="0.745" />
+
+
+            </FrameLayout>
+
+
+
+            <!-- You can add more views here -->
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

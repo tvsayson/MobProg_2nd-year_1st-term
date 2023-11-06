@@ -51,4 +51,17 @@ public class Homepage extends AppCompatActivity {
         Intent intent = new Intent(this, About_Us.class);
         startActivity(intent);
     }
+    public void events(View view) {
+        Intent intent = new Intent(this, Events.class);
+        startActivity(intent);
+    }
+    public void plantpioneer(View view) {
+        Intent intent = new Intent(this, Plant_Pioneers.class);
+        startActivity(intent);
+    }
+    public void bazaar(View view) {
+        Intent intent = new Intent(this, Bamboo_Bazaar.class);
+        startActivity(intent);
+    }
+
 }

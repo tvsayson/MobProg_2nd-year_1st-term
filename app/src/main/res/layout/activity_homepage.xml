@@ -115,6 +115,7 @@
               android:layout_height="111dp"
               android:layout_margin="10dp"
               android:layout_weight="1"
+              android:onClick="bazaar"
               android:background="@drawable/bbaz" />
 
           <ImageButton
@@ -123,6 +124,7 @@
               android:layout_height="111dp"
               android:layout_margin="10dp"
               android:layout_weight="1"
+              android:onClick="events"
               android:background="@drawable/events" />
 
           <ImageButton
@@ -131,6 +133,7 @@
               android:layout_height="111dp"
               android:layout_margin="10dp"
               android:layout_weight="1"
+              android:onClick="plantpioneer"
               android:background="@drawable/pion" />
           <ImageButton
               android:id="@+id/Bwprofile"
