@@ -187,6 +187,7 @@
         android:layout_width="24dp"
         android:layout_height="33dp"
         android:background="@color/trans"
+        android:onClick="Editback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"

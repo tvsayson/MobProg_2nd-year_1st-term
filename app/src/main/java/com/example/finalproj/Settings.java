@@ -37,4 +37,8 @@ public class Settings extends AppCompatActivity {
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
+    public void notif(View view) {
+        Intent intent = new Intent(this, Notification1.class);
+        startActivity(intent);
+    }
 }

@@ -44,15 +44,14 @@ public class Bamboo_Bazaar extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    public void Editback(View view) {
+        Intent intent = new Intent(this, Homepage.class);
+        startActivity(intent);
+    }
 
-        ImageButton backButton8;
-        backButton8 = findViewById(R.id.imageButton8);
-
-        backButton8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+    public void cart(View view) {
+        Intent intent = new Intent(this, Cart.class);
+        startActivity(intent);
     }
 }

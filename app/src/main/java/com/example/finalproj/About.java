@@ -22,7 +22,6 @@ public class About extends AppCompatActivity {
     private ImageView editImageView1;
     private ImageView editImageView2;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +70,7 @@ public class About extends AppCompatActivity {
         mainLayout.setBackground(new BitmapDrawable(getResources(), blurredBitmap));
     }
 
+
     public void Editback(View view) {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
@@ -88,5 +88,16 @@ public class About extends AppCompatActivity {
     public void delete(View view) {
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
+    }
+    public void pp(View view) {
+        Intent intent = new Intent(this, Privacy_Policy.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
+    public void terms(View view) {
+        Intent intent = new Intent(this, Terms.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

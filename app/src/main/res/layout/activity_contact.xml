@@ -121,8 +121,8 @@
 
     <ImageView
         android:id="@+id/Thanks"
-        android:layout_width="402dp"
-        android:layout_height="865dp"
+        android:layout_width="314dp"
+        android:layout_height="210dp"
         android:src="@drawable/pops"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
