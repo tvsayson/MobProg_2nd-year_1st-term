@@ -97,5 +97,9 @@ public class Changeprof extends AppCompatActivity {
             }
         }
     }
+    public void Editback(View view) {
+        Intent intent = new Intent(this, Editp.class);
+        startActivity(intent);
+    }
 }
 

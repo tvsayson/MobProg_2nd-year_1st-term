@@ -54,4 +54,8 @@ public class Bamboo_Bazaar extends AppCompatActivity {
         Intent intent = new Intent(this, Cart.class);
         startActivity(intent);
     }
+    public void rough(View view) {
+        Intent intent = new Intent(this, Rough_Bamboo.class);
+        startActivity(intent);
+    }
 }

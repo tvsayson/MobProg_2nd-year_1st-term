@@ -38,19 +38,6 @@
                     android:textColor="@color/Green"
                     android:textSize="37sp" />
 
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:onClick="Editback"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.042"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.019"
-                    app:srcCompat="@drawable/back_button" />
-
             </FrameLayout>
 
             <ImageView
@@ -208,4 +195,18 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="24dp"
+        android:layout_height="33dp"
+        android:background="@color/trans"
+        android:onClick="Editback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/back_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
