@@ -19,7 +19,7 @@ public class Bench_Review extends AppCompatActivity {
         info22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Bench_Review.this, Plant_Detail.class);
+                Intent intent = new Intent(Bench_Review.this, Bench_Detail.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
 
@@ -29,7 +29,7 @@ public class Bench_Review extends AppCompatActivity {
         care22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Bench_Review.this, Plant_Care.class);
+                Intent intent = new Intent(Bench_Review.this, Bench_Care.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
