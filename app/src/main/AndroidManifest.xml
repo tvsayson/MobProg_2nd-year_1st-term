@@ -7,7 +7,9 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -19,15 +21,50 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProj"
         tools:targetApi="31">
-
+        <activity
+            android:name=".bamboodevelopment"
+            android:exported="false" />
+        <activity
+            android:name=".sustainablebamboo"
+            android:exported="false" />
+        <activity
+            android:name=".trysearch"
+            android:exported="false" />
+        <activity
+            android:name=".userUpload"
+            android:exported="false" />
+        <activity
+            android:name=".filmcatalogue"
+            android:exported="false" />
+        <activity
+            android:name=".periodicals"
+            android:exported="false" />
+        <activity
+            android:name=".research"
+            android:exported="false" />
+        <activity
+            android:name=".booklisting"
+            android:exported="false" />
+        <activity
+            android:name=".bookCatalogue"
+            android:exported="false" />
+        <activity
+            android:name=".Catalog_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogHomePage"
+            android:exported="false"
+            android:label="@string/title_activity_catalog_home_page"
+            android:theme="@style/Theme.FinalProj" />
+        <activity
+            android:name=".QR_Code"
+            android:exported="false" />
         <activity
             android:name=".Checkout"
             android:exported="false" />
-
         <activity
             android:name=".Cart"
             android:exported="false" />
-
         <activity
             android:name=".Terms"
             android:exported="false" />

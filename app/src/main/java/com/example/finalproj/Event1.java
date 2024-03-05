@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Event1 extends AppCompatActivity {
+public class  Event1 extends AppCompatActivity {
 
     ImageButton backButton2;
 

@@ -25,10 +25,10 @@
         app:layout_constraintVertical_bias="0.898" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password123"
         android:layout_width="350dp"
         android:layout_height="54dp"
-        android:layout_below="@id/email"
+        android:layout_below="@id/email123"
         android:layout_margin="20dp"
         android:autofillHints=""
         android:background="@drawable/textcorner"
@@ -52,7 +52,7 @@
         android:id="@+id/login"
         android:layout_width="318dp"
         android:layout_height="45dp"
-        android:layout_below="@id/password"
+        android:layout_below="@id/password123"
         android:fontFamily="@font/poppins"
         android:text="@string/button1"
         android:textColor="@color/white"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.834" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/email123"
         android:layout_width="350dp"
         android:layout_height="54dp"
         android:layout_margin="20dp"
@@ -106,7 +106,7 @@
         app:layout_constraintVertical_bias="0.728" />
 
     <TextView
-        android:id="@+id/SkipforNow"
+        android:id="@+id/SkipforNow5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/login"
@@ -120,7 +120,7 @@
         app:layout_constraintVertical_bias="0.964" />
 
     <TextView
-        android:id="@+id/Register"
+        android:id="@+id/Register5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autoLink="web"

@@ -84,7 +84,7 @@
           app:srcCompat="@drawable/event3" />
 
       <HorizontalScrollView
-          android:id="@+id/horizontalScrollView"
+          android:id="@+id/df"
           android:layout_width="373dp"
           android:layout_height="129dp"
           android:fillViewport="true"
@@ -100,6 +100,15 @@
             android:orientation="horizontal"
             android:scrollbarThumbHorizontal="@color/cream"
             android:scrollbarTrackHorizontal="@color/cream">
+
+          <ImageView
+              android:id="@+id/imageView68"
+              android:layout_width="117dp"
+              android:layout_height="116dp"
+              android:layout_margin="10dp"
+              android:layout_weight="0"
+              android:onClick="library"
+              app:srcCompat="@drawable/librarypicture" />
 
           <ImageButton
               android:id="@+id/imageview1"
@@ -125,8 +134,8 @@
               android:layout_height="111dp"
               android:layout_margin="10dp"
               android:layout_weight="1"
-              android:onClick="events"
-              android:background="@drawable/events" />
+              android:background="@drawable/events"
+              android:onClick="events" />
 
           <ImageButton
               android:id="@+id/plantpioneer"
@@ -152,6 +161,7 @@
               android:onClick="aboutus"
               android:layout_weight="1"
               android:background="@drawable/aboutus" />
+
         </LinearLayout>
       </HorizontalScrollView>
 

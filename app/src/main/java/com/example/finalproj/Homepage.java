@@ -67,5 +67,9 @@ public class Homepage extends AppCompatActivity {
         Intent intent = new Intent(this, Bamboo_Map.class);
         startActivity(intent);
     }
+    public void library(View view) {
+        Intent intent = new Intent(this, Catalog_HomePage.class);
+        startActivity(intent);
+    }
 
 }
